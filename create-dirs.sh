@@ -1,7 +1,11 @@
 #!/bin/bash
 echo "Create & Crawl Directories"
 
-for i in {0..2} # Run through a loop 3 times (0-based index)
+## Create directories
+dirname=""
+for i in {0..2}
 do
-	echo "Number: $i"
+	dirname="dir-"$i # Create new directory name with index
+	echo "Creating... /$dirname"
+	mkdir $dirname
 done
